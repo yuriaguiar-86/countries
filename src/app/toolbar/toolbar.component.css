@@ -1,0 +1,18 @@
+header {
+  padding: 20px 0;
+  color: var(--white);
+  background: var(--dark_elements);
+  box-shadow: var(--text) 0px 1px 5px;
+}
+
+.containner__header {
+  margin: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containner__header .icon {
+  margin-right: 10px;
+}

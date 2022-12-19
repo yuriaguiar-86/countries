@@ -1,0 +1,14 @@
+<app-search></app-search>
+
+<section class="containner__country">
+  <a *ngFor="let country of countries" routerLink="{{ country.name.common }}" class="country">
+    <img [src]="country.flags.png" [alt]="country.name.common" />
+
+    <ul>
+      <h3>{{ country.name.common }}</h3>
+      <li>Population: <span>{{ country.population.toLocaleString('pt-BR') }}</span></li>
+      <li>Region: <span>{{ country.region }}</span></li>
+      <li>Name official: <span>{{ country.name.official }}</span></li>
+    </ul>
+  </a>
+</section>

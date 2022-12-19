@@ -1,0 +1,25 @@
+<a routerLink="/countries" class="containner__back">
+  <i class="fa-solid fa-arrow-left"></i>
+  <p>Back</p>
+</a>
+
+<div class="containner__about">
+  <img [src]="country.flags.png" alt="{{ country.name.common }}" />
+
+  <section>
+    <h2>{{ country.name.common }}</h2>
+
+    <ul class="about__contry">
+      <li>Native Name: <span>{{ country.name.official }}</span></li>
+      <li>Population: <span>{{ country.population.toLocaleString('pt-BR') }}</span></li>
+      <li>Region: <span>{{ country.region }}</span></li>
+      <li>Sub Region: <span>{{ country.subregion }}</span></li>
+      <li>Capital: <span>{{ country.capital }}</span></li>
+    </ul>
+
+    <div class="borders__country">
+      <p>Border Countries: </p>
+      <span *ngFor="let continent of country.continents" class="border">{{ continent }}</span>
+    </div>
+  </section>
+</div>

@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Poppins:wght@500;700&display=swap');
+
+:root {
+  --input: hsl(0, 0%, 52%);
+  --white: hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --light_background: hsl(0, 0%, 98%);
+  --dark_elements: hsl(209, 23%, 22%);
+  --dark_background: hsl(207, 26%, 17%);
+
+  --detail_age: 16px;
+  --homepage_items: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  font-size: var(--homepage_items);
+  background: var(--dark_background);
+  font-family: 'Nunito Sans', 'Poppins', sans-serif;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.containner__back {
+  width: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: var(--text) 0px 1px 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--dark_elements);
+}

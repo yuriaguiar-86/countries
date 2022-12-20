@@ -14,7 +14,7 @@
 input {
   padding: 10px;
   margin-left: 15px;
-  min-width: 300px;
+  min-width: 230px;
 
   border: none;
   outline: none;
@@ -24,14 +24,4 @@ input {
 
 input::placeholder {
   color: var(--input);
-}
-
-select {
-  padding: 15px;
-  border-radius: 5px;
-
-  border: none;
-  color: var(--light_background);
-  background: var(--dark_elements);
-  box-shadow: var(--text) 0px 1px 5px;
 }

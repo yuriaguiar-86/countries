@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: '', component: ListCountriesComponent },
   { path: 'countries', component: ListCountriesComponent },
   { path: 'countries/:name', component: SpecificComponent },
+  { path: ':name', component: SpecificComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

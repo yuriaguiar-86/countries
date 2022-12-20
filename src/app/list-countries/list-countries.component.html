@@ -1,4 +1,4 @@
-<app-search></app-search>
+<app-search (emmitSearch)="filterCountry($event)"></app-search>
 
 <section class="containner__country">
   <a *ngFor="let country of countries" routerLink="{{ country.name.common }}" class="country">
